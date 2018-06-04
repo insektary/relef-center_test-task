@@ -1,0 +1,62 @@
+@testColor: #6B9AD0;
+@hoverColor: #6791c6;
+@arrowColor: #9dcfff;
+
+html {
+    font-size: 10px;
+}
+
+.nav {
+    background-color: @testColor;
+    height: 6rem;
+}
+
+.menu {
+    height: 100%;
+    width: 60rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding-top: 1.5rem;
+
+    &__button {
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        background-color: #4d729a;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-right: 2rem;
+        outline: none;
+
+        &:hover {
+            background-color: #5880af;
+        }
+    }
+}
+
+.sort {
+    color: white;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+
+    &__select {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #4d729a;
+        font-size: 1.4rem;
+        color: white;
+        margin-left: 1.4rem;
+        padding: 0.2rem 0 0.2rem 0;
+        border-radius: 3px;
+    }
+
+    &__option {
+        cursor: pointer;
+    }
+}
