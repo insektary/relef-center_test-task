@@ -1,6 +1,8 @@
 @testColor: #6B9AD0;
-@hoverColor: #6791c6;
-@arrowColor: #9dcfff;
+@buttonColor: #4d729a;
+@buttonHoverColor: #5880af;
+@buttonCurrentColor: orange;
+@defaultColor: white;
 
 html {
     font-size: 10px;
@@ -13,7 +15,7 @@ html {
 
 .menu {
     height: 100%;
-    width: 60rem;
+    width: 80rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -26,7 +28,7 @@ html {
         width: 3rem;
         height: 3rem;
         color: white;
-        background-color: #4d729a;
+        background-color: @buttonColor;
         border: none;
         cursor: pointer;
         border-radius: 50%;
@@ -34,7 +36,15 @@ html {
         outline: none;
 
         &:hover {
-            background-color: #5880af;
+            background-color: @buttonHoverColor
+        }
+
+        &--current {
+            background-color: @buttonCurrentColor;
+
+            &:hover {
+                background-color: @buttonCurrentColor;
+            }
         }
     }
 }
@@ -48,9 +58,9 @@ html {
         cursor: pointer;
         border: none;
         outline: none;
-        background-color: #4d729a;
+        background-color: @buttonColor;
         font-size: 1.4rem;
-        color: white;
+        color: @defaultColor;
         margin-left: 1.4rem;
         padding: 0.2rem 0 0.2rem 0;
         border-radius: 3px;

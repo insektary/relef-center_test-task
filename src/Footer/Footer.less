@@ -1,0 +1,43 @@
+@testColor: #6B9AD0;
+@buttonColor: #4d729a;
+@buttonHoverColor: #5880af;
+@buttonCurrentColor: orange;
+
+.footer {
+    background-color: @testColor;
+}
+
+.pages {
+    width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navButton {
+    background-color: @buttonColor;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.4rem 0.4rem 0.2rem 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3rem;
+
+    &:hover {
+        background-color: @buttonHoverColor;
+    }
+
+    &--current {
+        background-color: @buttonCurrentColor;
+
+        &:hover {
+            background-color: @buttonCurrentColor;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@defaultFont: 'Arial';
+
+.news-item {
+    display: flex;
+    margin: 1rem 0 1rem 0;
+
+    &__image {
+        height: 10rem;
+        width: 10rem;
+
+        & img {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}
+
+.news-content {
+    font-family: @defaultFont;
+    padding: 1rem;
+
+    &__title {
+        font-size: 1.2rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+}
